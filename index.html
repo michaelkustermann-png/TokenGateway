@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI Token Payment Gateway (Development Version)</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #12151c;
+    --border: #232733;
+    --text: #e6e9ef;
+    --muted: #9aa3b2;
+    --accent: #5b8cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffb454;
+    background: rgba(255, 180, 84, 0.12);
+    border: 1px solid rgba(255, 180, 84, 0.3);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+    margin: 0 0 0.5rem;
+  }
+  .lede {
+    color: var(--muted);
+    font-size: 1.05rem;
+    margin: 0 0 2.5rem;
+  }
+  section {
+    margin-bottom: 2.5rem;
+  }
+  h2 {
+    font-size: 1.15rem;
+    margin: 0 0 0.75rem;
+    color: var(--text);
+  }
+  p { color: var(--muted); margin: 0 0 0.75rem; }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .packs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .pack {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    text-align: center;
+  }
+  .pack .name {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .pack .price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .pack .credits {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.25rem;
+  }
+  ol { color: var(--muted); padding-left: 1.25rem; }
+  ol li { margin-bottom: 0.5rem; }
+  a { color: var(--accent); }
+  .contact {
+    display: flex;
+    gap: 0.5rem;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  @media (max-width: 600px) {
+    .packs { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Development / Testing Environment</span>
+  <h1>AI Token Payment Gateway</h1>
+  <p class="lede">A backend payment gateway for purchasing digital tokens used to access AI-driven software features.</p>
+
+  <section>
+    <h2>What this is</h2>
+    <p>
+      This service is a backend payment gateway used to purchase digital tokens for AI-driven
+      software tools. It integrates with Stripe Checkout to process payments and stores token
+      balances in a Supabase database. It is currently in a development/testing environment and
+      not yet available to the public. Tokens purchased through this system are used for
+      accessing computational features (AI-assisted analysis) in applications built on top of it.
+      No physical goods or restricted services are involved.
+    </p>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <ol>
+      <li>You purchase a prepaid credit pack via Stripe Checkout.</li>
+      <li>Stripe confirms the payment and the gateway credits your account balance.</li>
+      <li>Client applications spend credits to make metered AI requests; the gateway debits your balance for the exact usage.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Pricing</h2>
+    <div class="packs">
+      <div class="pack">
+        <div class="name">Small</div>
+        <div class="price">$5</div>
+        <div class="credits">500,000 credits</div>
+      </div>
+      <div class="pack">
+        <div class="name">Medium</div>
+        <div class="price">$20</div>
+        <div class="credits">2,000,000 credits</div>
+      </div>
+      <div class="pack">
+        <div class="name">Large</div>
+        <div class="price">$50</div>
+        <div class="credits">5,000,000 credits</div>
+      </div>
+    </div>
+    <p style="margin-top: 1rem;">Credits are consumed as AI requests are made, priced per token of usage. Unused credits remain on your account balance until spent.</p>
+  </section>
+
+  <section>
+    <h2>Refunds</h2>
+    <p>
+      Because credits are consumed only as they're used, any unused portion of a purchase is
+      eligible for a refund on request. Contact support below with your account details and the
+      purchase you'd like refunded.
+    </p>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <div class="card contact">
+      <span>Questions, refund requests, or account issues:</span>
+      <a href="mailto:michael.kustermann@gmail.com">michael.kustermann@gmail.com</a>
+    </div>
+  </section>
+
+  <footer>
+    This project is in active development and not yet generally available. Pricing and features
+    are subject to change prior to public launch.
+  </footer>
+</div>
+</body>
+</html>
