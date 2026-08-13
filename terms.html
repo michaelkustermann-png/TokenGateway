@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Terms of Service - AI Token Payment Gateway</title>
+<style>
+  :root {
+    --bg: #0b0d12;
+    --panel: #12151c;
+    --border: #232733;
+    --text: #e6e9ef;
+    --muted: #9aa3b2;
+    --accent: #5b8cff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem 5rem;
+  }
+  .badge {
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffb454;
+    background: rgba(255, 180, 84, 0.12);
+    border: 1px solid rgba(255, 180, 84, 0.3);
+    border-radius: 999px;
+    padding: 0.25rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+  h1 { font-size: 2rem; margin: 0 0 0.5rem; }
+  .lede { color: var(--muted); font-size: 1.05rem; margin: 0 0 2.5rem; }
+  section { margin-bottom: 2.5rem; }
+  h2 { font-size: 1.15rem; margin: 0 0 0.75rem; color: var(--text); }
+  p, li { color: var(--muted); margin: 0 0 0.75rem; }
+  ul, ol { padding-left: 1.25rem; }
+  li { margin-bottom: 0.5rem; }
+  a { color: var(--accent); }
+  .card {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .flag {
+    background: rgba(255, 180, 84, 0.1);
+    border: 1px solid rgba(255, 180, 84, 0.3);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+  }
+  footer {
+    border-top: 1px solid var(--border);
+    padding-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <span class="badge">Development / Testing Environment</span>
+  <h1>Terms of Service</h1>
+  <p class="lede">Last updated: 13 August 2026. Applies to the AI Token Payment Gateway service ("the Gateway", "we", "us").</p>
+
+  <section>
+    <h2>1. Acceptance of terms</h2>
+    <p>
+      By purchasing credits or making requests through the Gateway, you agree to these terms. If
+      you don't agree, don't use the service.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. What the service is</h2>
+    <p>
+      The Gateway is a backend payment and metering service: you purchase prepaid credits, and
+      client applications built on top of the Gateway spend those credits to make AI-driven
+      requests. The Gateway is currently in active development and not yet generally available;
+      features, pricing, and availability may change without notice.
+    </p>
+  </section>
+
+  <section>
+    <h2>3. Accounts and API keys</h2>
+    <p>
+      You're responsible for keeping any API key issued to you confidential. Anyone with a valid
+      key can spend the credits on that account. We may revoke keys or suspend accounts we
+      reasonably believe are being used fraudulently or abusively.
+    </p>
+  </section>
+
+  <section>
+    <h2>4. Credits and payment</h2>
+    <p>
+      Credits are purchased in advance and consumed as AI requests are made, based on actual usage.
+      Because credits are only consumed as used, the unused portion of a purchase is eligible for a
+      refund on request -- contact us with your account details and the purchase in question.
+      Pricing may change for future purchases; it doesn't affect credits you've already bought.
+    </p>
+  </section>
+
+  <section>
+    <h2>5. Acceptable use</h2>
+    <p>You agree not to:</p>
+    <ul>
+      <li>Use the service for anything illegal, or to generate content that violates applicable law.</li>
+      <li>Attempt to circumvent metering, billing, or rate limits.</li>
+      <li>Attempt to gain unauthorized access to accounts, keys, or infrastructure that isn't yours.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>6. Service availability</h2>
+    <p>
+      This is a development-stage service. We don't guarantee uptime, and we may modify, suspend,
+      or discontinue the service, in whole or part, at any time. We'll try to give notice of
+      material changes where practical, but can't promise it in every case at this stage.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Third-party dependencies</h2>
+    <p>
+      The Gateway relies on third-party providers -- currently Stripe for payments, OpenAI for AI
+      processing, and Supabase for data hosting. We're not responsible for outages, errors, or
+      changes on their end, though we'll do our best to work around them.
+    </p>
+  </section>
+
+  <section>
+    <h2>8. Disclaimer of warranties</h2>
+    <p>
+      The service is provided "as is" and "as available," without warranties of any kind, express
+      or implied, to the maximum extent permitted by law.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Limitation of liability</h2>
+    <p>
+      To the maximum extent permitted by law, our total liability to you for any claim relating to
+      the service is limited to the amount you paid us in the 3 months before the claim arose, and
+      we're not liable for indirect, incidental, or consequential damages.
+    </p>
+    <div class="flag">
+      If you're a consumer in Australia, nothing in this section excludes rights you have under the
+      Australian Consumer Law that can't lawfully be excluded.
+    </div>
+  </section>
+
+  <section>
+    <h2>10. Termination</h2>
+    <p>
+      We may suspend or terminate your access for breach of these terms. You can stop using the
+      service at any time; unused credits remain refundable per section 4.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Governing law</h2>
+    <p>
+      These terms are governed by the laws of South Australia, Australia.
+    </p>
+  </section>
+
+  <section>
+    <h2>12. Changes to these terms</h2>
+    <p>
+      We may update these terms as the service develops. Material changes will be reflected by
+      updating the "last updated" date above.
+    </p>
+  </section>
+
+  <section>
+    <h2>13. Contact</h2>
+    <div class="card">
+      <p style="margin:0;">Questions about these terms:<br />
+      <a href="mailto:michael.kustermann@gmail.com">michael.kustermann@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <a href="index.html">&larr; Back to the Gateway overview</a> &middot; <a href="privacy.html">Privacy Policy</a>
+  </footer>
+</div>
+</body>
+</html>
